@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Participant Registration</h1>
+
+        <form action="registerEvent" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="type">Attendee Type:</label>
+            <select id="type" name="Attendeetype">
+                <option value="Regular">Regular Attendee</option>
+                <option value="VIP">VIP</option>
+
+            </select><br>
+
+            <label for="irn">College IRN Number:</label>
+            <input type="text" id="irn" name="irn" required><br>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="dept" required><br>
+
+            <label for="Academicyear">Academic Year:</label>
+            <input type="text" id="Academicyear" name="year" required><br>
+
+            <label for="EventName">Event Name:</label>
+            <input type="text" id="EventName" name="eventname" required><br>
+
+
+
+            <input type="submit" value="Register">
+        </form>
+
+</div>
+</body>
+</html>

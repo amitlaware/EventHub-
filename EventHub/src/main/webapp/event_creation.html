@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Creation</title>
+</head>
+<body>
+<h1>Create Event</h1>
+<form id="eventForm" action="eventCreation" method="POST"  >
+
+    Event Name:<label for="eventName1"></label><input type="text" id="eventName1" name="eventName1" required><br> <br/>
+    Date:<label for="eventDate1"></label><input type="date" id="eventDate1" name="eventDate1" required><br><br/>
+    Time:<label for="eventTime1"></label><input type="time" id="eventTime1" name="eventTime1" required><br><br/>
+    Venue: <label for="eventVenue1"></label><input type="text" id="eventVenue1" name="eventVenue1" required ><br><br/>
+    Description: <label for="eventDescription1"></label><textarea id="eventDescription1" name="eventDescription1" rows="4" cols="50" required></textarea><br><br/>
+
+    Event Type: <label for="eventType1"></label><select id="eventType1" name="eventType1" required>
+        <option value="workshop">Workshop</option>
+        <option value="guestLecture">Guest Lecture</option>
+        <option value="presentation">Presentation</option>
+        <option value="other">Other</option>
+    </select><br><br/>
+
+    <label>Ticket Options:</label><br>
+    <input type="checkbox" id="vipTicket" name="ticketOptions1" value="VIP">
+    <label for="vipTicket">VIP</label><br>
+    <input type="checkbox" id="regularTicket" name="ticketOptions1" value="Regular">
+    <label for="regularTicket">Regular Attendee</label><br>
+    <input type="checkbox" id="committeeTicket" name="ticketOptions1" value="Committee Member">
+    <label for="committeeTicket">Committee Member</label><br>
+
+    <button type="submit">Create Event</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Type Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Select User Type</h1>
+<label>
+    <input type="radio" name="userType" value="organizer" id="organizerRadio"> Organizer
+</label><br>
+<label>
+    <input type="radio" name="userType" value="participant" id="participantRadio"> Participant
+</label><br>
+<button id="proceedBtn">Proceed</button>
+
+<script>
+    document.getElementById("proceedBtn").onclick = function() {
+        var userType = document.querySelector('input[name="userType"]:checked');
+
+        if (userType) {
+            if (userType.value === "organizer") {
+                window.location.href = "organizer_dashboard.html";
+            } else if (userType.value === "participant") {
+                window.location.href = "UpcomingEvents.jsp";
+            }
+        } else {
+            alert("Please select a user type.");
+        }
+    };
+</script>
+</body>
+</html>
